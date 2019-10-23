@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Towaves</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/create-event.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="text-center">
+        <div style="width: 180px; height: 80px;  margin-bottom: 4rem;" class="center">
+            <img width="100%" height="100%" src="./assets/images/logo_new.png">
+        </div>
+        <h3 style="color: #384CBD;">Create event</h3>
+    </div>
+    <section class="main-section mt-3">
+        <img class="main-img" src="./assets/images/back.jpg" alt="">
+        <div class="container h-100">
+            <div class="d-flex h-100 align-items-center ">
+                <div id="video-content" class="w-75">
+                    <div class="row">
+                        <div class="col-md-8 mb-md-0 mb-5 mx-auto">
+                            <form>
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <label for="formGroupExampleInput" class="">Event name</label>
+                                            <input type="text" class="form-control" id="event-name" required
+                                                placeholder="Your event name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <label for="formGroupExampleInput" class="">Select catagory</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-2">
+                                            <a href="#" class="myButton">Music</a>
+                                            <a href="#" class="myButton">Virtual Arts</a>
+                                            <a href="#" class="myButton">Performing Arts</a>
+                                            <a href="#" class="myButton">Film</a>
+                                            <a href="#" class="myButton">Lectures</a>
+                                            <a href="#" class="myButton">Books</a>
+                                            <a href="#" class="myButton">Sports & Active Life</a>
+                                            <a href="#" class="myButton">Fashion</a>
+                                            <a href="#" class="myButton">Food and Drink</a>
+                                            <a href="#" class="myButton">Festivals and Fairs</a>
+                                            <a href="#" class="myButton">Charities</a>
+                                            <a href="#" class="myButton">Nighlife</a>
+                                            <a href="#" class="myButton">Kids and Family</a>
+                                            <a href="#" class="myButton">Other</a>
+                                            <a href="#" class="myButton">Outdoor Activities</a>
+                                            <a href="#" class="myButton">Nature Activities</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <label for="contact-message">Description</label>
+                                            <textarea id="contact-message" class="form-control md-textarea" rows="10"
+                                                placeholder="Write description 100"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <label for="contact-message">Place</label><br>
+                                            <select class="form-control" class="mdb-select" searchable="Search here..">
+                                                <option value="" disabled selected>Address</option>
+                                                <option value="1"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <label for="contact-message" class="font-weight-bold">Start</label><br>
+                                        <input id="startDate" width="276" value="10/22/2019" />
+                                    </div>
+                                    <div class="col-md-6">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <label for="" class="font-weight-bold">Add photo</label>
+                                        <div
+                                            style="background-color: #EBEBEB; width: 200px; height: 200px; position: relative;">
+                                            <div class="form-img">
+                                                <img src="./assets/images/Group 58@2x.png" alt="" width="100%"
+                                                    height="100%">
+                                            </div>
+                                        </div>
+                                        <div class="ui">
+                                            <div class="ui fluid segment">
+                                                <input type="file" (change)="fileEvent($event)" class="inputfile"
+                                                    id="embedpollfileinput" />
+                                                <label for="embedpollfileinput"
+                                                    class="ui huge right floated button text-white"
+                                                    style="background-color: #384CBD; padding: 10px 51px;">
+                                                    Upload image
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center text-md-left mt-3">
+                                    <a class="btn btn-lg text-white"
+                                        style="width: 100%; background-color: #384CBD;">Create Event</a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./assets/js/create-event.js"></script>
+</body>
+
+</html>

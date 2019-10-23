@@ -1,0 +1,163 @@
+.navbar-nav>li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+section .container {
+    position: relative;
+    z-index: 2;
+}
+
+section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    section {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    section video {
+        display: none;
+    }
+}
+
+#video-content .explore-events {
+    background-color: red;
+}
+
+.images {
+    width: 254px;
+    height: 180px;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ensure equal card height inside carousel */
+
+.carousel-inner>.row-equal.active, .carousel-inner>.row-equal.next, .carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+
+.carousel-inner>.row-equal.active.left, .carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+/* .row-equal>div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+} */
+
+.row-equal .card {
+    width: 100%;
+}
+
+/* .card-text{
+    max-height: 250px;
+    overflow-y: scroll;
+} */
+
+.lead .prev {
+    position: absolute;
+    top: 35%;
+    left: -1%;
+    /* min-width: 5%; */
+    /* min-height: 5%; */
+    width: auto;
+    z-index: 1;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.lead .next {
+    position: absolute;
+    top: 35%;
+    right: -4%;
+    /* min-width: 5%; */
+    /* min-height: 5%; */
+    width: auto;
+    z-index: 1;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.join {
+    background: linear-gradient(to right, #3165b2, #90298d) !important;
+}
+
+.star-logo {
+    width: 20px;
+    height: 20px;
+    position: center;
+}
+
+.card-add {
+    display: none;
+}
+
+.card-add.mt-4 {
+    text-align: center;
+    pointer-events: none;
+}
+
+#site-carousel {
+    position: relative;
+    /* background-color: black; */
+}
+
+.card-block .outdoor-activities {
+    color: #90298d;
+}
+
+.img-catagory {
+    width: 254px;
+    height: 180px;
+}
+
+.img-catagory img {
+    width: 100%;
+    height: 100%;
+}
+
