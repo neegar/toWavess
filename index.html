@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/index.css ">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
@@ -23,32 +19,28 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/images/logo_new.png" class="119.73" height="49.5px" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-light"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav navbar-right ml-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Sign in </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Login</a>
-                        </li>
+        <div class="navigation">
+            <div class="nav-container">
+                <div class="brand"><a href="./index.html">
+                        <img src="./assets/images/logo_new.png" class="logo 119.73" height="49.5px" alt="logo">
+                    </a></div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li><a href="#!">Sign in</a></li>
+                        <li><a href="#!">Login</a></li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
+    <!-- //Header -->
+    <!-- Video -->
     <section>
         <div class="overlay"></div>
-        <video playsinline="playsinline" muted="muted" loop="loop">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="./assets/videos/final01.mp4" type="video/mp4">
         </video>
         <div class="container h-100">
@@ -60,280 +52,133 @@
                             ToWaves!</b></h6>
                     <h6><b>We simply want to extend the boundaries of Earth to the horizons of your imaginations!</b>
                     </h6><br>
-                    <a class="btn text-white btn-lg pl-5 pr-5 explore-events" href="#" role="button"><small
-                            class="font-weight-bold">Explore events</small></a>
+                    <button class="btn text-white btn-lg pl-5 pr-5 explore-events" href="#" role="button"><small
+                            class="font-weight-bold">Explore events</small></button>
                 </div>
             </div>
         </div>
     </section>
+    <!-- //Video -->
+    <!-- Page Wrapper -->
+    <div class="page-wrapper mt-5" id="post-wrapper">
+        <div class="post-slider">
+            <h3 class="slider-title">Top events</h3>
+            <p class="slider-info">Find events that they get together to do the things they love.</p>
+            <h5 class="see-all"><a href="#">See all events</a></h5>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+            <div class="post-wrapper">
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-10 col-sm-6">
-                <h4>Top events</h4>
-                <p>Find events that get together to do the things they love.</p>
-            </div>
-
-            <div class="col-md-2 col-sm-6 mt-5">
-                <h5 class="text-right"><a href="#">See all events</a></h5>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div id="bs4-multi-slide-carousel postsCarousel site-carousel" class="carousel slide" data-ride="false">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12  lead paginator-center">
-
-                        <a class="btn btn-outline-secondary prev rounded-circle text-dark bg-light" href=""
-                            title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
-
-                        <a class="btn btn-outline-secondary next rounded-circle text-dark bg-light" href=""
-                            title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="carousel-inner " role="listbox" style=" width:100%; height: 500px !important;">
-                <div class="carousel-item active">
-                    <div class="row row-equal">
-                        <div class="col-md-3" id="main-card">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Crazy.jpg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2">
-                                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Placeat ullam deserunt culpa voluptate voluptatum cumque earum, a non
-                                            tenetur
-                                            provident repudiandae possimus, autem sit</p>
-                                        <span class="outdoor-activities">outdoor activities</span> <span
-                                            class="text-muted joined-count">0</span> <span id="joined-text"
-                                            class="text-muted">member</span>
-                                    </div>
-                                    <div class="card-add mt-4">
-                                        <div class="row">
-                                            <div class="col-6 text-center">
-                                                <a href="#"><img src="./assets/images/A_Black_Star.png"
-                                                        class="star-logo" alt=""></a>
-                                                <p>1255</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="post">
+                    <img src="./assets/images/autumn-equinox.jpg" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h6>Dualingio Baku English Meetup</h6>
+                        <p class="text-muted">Join us to practice your English with cool people in casual locations!</p>
+                        <a href="#">Outdoor activities</a>
+                        &nbsp;
+                        <span class="text-muted joined-count">0</span> <span class="joined-text"
+                            class="text-muted">member</span>
+                        <div class="card-add mt-4">
+                            <div class="row">
+                                <div class="col-6 text-center">
+                                    <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                            alt=""></a>
+                                    <p>1255</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Fun.jpeg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit.
-                                        Inventore dignissimos amet quia eos nesciunt at, mollitia voluptate consequatur
-                                        autem corporis, qui est, voluptates distinct
-                                        <p>outdoor activities <span>1255</span> member</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/artistic.jpg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing
-                                        elit. Ipsum eos, accusamus alias adipisci sunt rerum hic corrupti, iste soluta
-                                        ipsam assumenda earum quam. Amet quam officia earum
-                                        <p>outdoor activities <span>1255</span>member</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Professional.jpeg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing
-                                        elit. Omnis enim reiciendis obcaecati, repellat esse autem architecto. Nisi
-                                        possimus veniam veritatis nulla atque error
-                                        <p>outdoor activities <span>1255</span>member</p>
-                                    </div>
+                                <div class="col-6">
+                                    <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row row-equal">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Crazy.jpg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit, amet consectetur
-                                        adipisicing
-                                        elit. Quo, non fugiat! Cumque, rerum perferendis culpa libero quibusdam
-                                        voluptate nam tempora consequatur suscipit
-                                        <p>outdoor activities <span>1255</span> joined</p>
-                                    </div>
+                <div class="post">
+                    <img src="./assets/images/volunteer-hands.jpeg" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h6>Dualingio Baku English Meetup</h6>
+                        <p class="text-muted">Join us to practice your English with cool people in casual locations!</p>
+                        <a href="#">Outdoor activities</a>
+                        &nbsp;
+                        <span class="text-muted joined-count">0</span> <span class="joined-text"
+                            class="text-muted">member</span>
+                        <div class="card-add mt-4">
+                            <div class="row">
+                                <div class="col-6 text-center">
+                                    <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                            alt=""></a>
+                                    <p>1255</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Fun.jpeg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit.
-                                        Blanditiis, eligendi sapiente quidem illo, soluta, reprehenderit tempora ullam
-                                        voluptates ducimus
-                                        <p>outdoor activities <span>1255</span> joined</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/artistic.jpg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet consectetur,
-                                        adipisicing
-                                        elit. Quo quibusdam odit nisi inventore modi maxime corporis consequatur,
-                                        recusandae velit nesciunt. Commodi erro
-                                        <p>outdoor activities <span>1255</span> joined</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Professional.jpeg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit. Aperiam nam consectetur corrupti animi numquam, alias libero minus
-                                        recusandae dignissimo
-                                        <p>outdoor activities <span>1255</span> joined</p>
-                                    </div>
+                                <div class="col-6">
+                                    <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row row-equal">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Crazy.jpg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing
-                                        elit. Esse animi autem aperiam iure doloribus! Est, quasi libero. Consequuntur,
-                                        architecto cupiditate
-                                        <p>outdoor activities <span>1255</span> joined</p>
-                                    </div>
+                <div class="post">
+                    <img src="./assets/images/Challenge.jpeg" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h6>Dualingio Baku English Meetup</h6>
+                        <p class="text-muted">Join us to practice your English with cool people in casual locations!</p>
+                        <a href="#">Outdoor activities</a>
+                        &nbsp;
+                        <span class="text-muted joined-count">0</span> <span class="joined-text"
+                            class="text-muted">member</span>
+                        <div class="card-add mt-4">
+                            <div class="row">
+                                <div class="col-6 text-center">
+                                    <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                            alt=""></a>
+                                    <p>1255</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Fun.jpeg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing
-                                        elit. Voluptate minus quaerat maxime sit officia, delectus eius consectetur
-                                        ullam accusantium facilis ha
-                                        <p>outdoor activities <span>1255</span> joined</p>
-                                    </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="./assets/images/Professional.jpeg" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h6>Dualingio Baku English Meetup</h6>
+                        <p class="text-muted">Join us to practice your English with cool people in casual locations!</p>
+                        <a href="#">Outdoor activities</a>
+                        &nbsp;
+                        <span class="text-muted joined-count">0</span> <span class="joined-text"
+                            class="text-muted">member</span>
+                        <div class="card-add mt-4">
+                            <div class="row">
+                                <div class="col-6 text-center">
+                                    <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                            alt=""></a>
+                                    <p>1255</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/artistic.jpg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing
-                                        elit. Suscipit alias quod odio modi repellendus laboriosam voluptatibus. Rem
-                                        assumenda ipsum, magni sit error non u
-                                        <p>outdoor activities <span>1255</span> joined</p>
-                                    </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="./assets/images/Water-Bridges-l.jpg" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h6>Dualingio Baku English Meetup</h6>
+                        <p class="text-muted">Join us to practice your English with cool people in casual locations!</p>
+                        <a href="#">Outdoor activities</a>
+                        &nbsp;
+                        <span class="text-muted joined-count">0</span> <span class="joined-text"
+                            class="text-muted">member</span>
+                        <div class="card-add mt-4">
+                            <div class="row">
+                                <div class="col-6 text-center">
+                                    <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                            alt=""></a>
+                                    <p>1255</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="images card-img-top card-img-top-250">
-                                        <img src="./assets/images/Professional.jpeg" alt="image1" class="d-block w-100">
-                                    </div>
-                                    <div class="card-title pl-2">
-                                        <h6>title1/</h6>
-                                    </div>
-                                    <div class="card-text pl-2 text-muted">Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing
-                                        elit. Repudiandae est atque consectetur unde omnis laudantium, suscipit,
-                                        delectus ex dolores repellat pariatu
-                                        <p>outdoor activities <span>1255</span> joined</p>
-                                    </div>
+                                <div class="col-6">
+                                    <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
                                 </div>
                             </div>
                         </div>
@@ -341,9 +186,11 @@
                 </div>
             </div>
         </div>
-
     </div>
+    <!-- //Page Wrapper -->
 
+
+    <!-- Catagory -->
     <div class="container">
         <div class="row">
             <div class="col-md-12 catagory-text">
@@ -351,25 +198,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/Social.jpeg" alt="">
                 </div>
                 <h6 class="mt-2">Music</h6>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/artistic.jpg" alt="">
                 </div>
                 <h6 class="mt-2">Preforming art</h6>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/Crazy.jpg" alt="">
                 </div>
                 <h6 class="mt-2">Outdoor activities</h6>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/outdoors.jpeg" alt="">
                 </div>
@@ -377,25 +224,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-6 mt-3">
+            <div class="col-md-3 col-sm-6 mt-3 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/outdoors.jpeg" alt="">
                 </div>
                 <h6 class="mt-2">Music</h6>
             </div>
-            <div class="col-md-3 col-sm-6 mt-3">
+            <div class="col-md-3 col-sm-6 mt-3 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/Professional.jpeg" alt="">
                 </div>
                 <h6 class="mt-2">Preforming art</h6>
             </div>
-            <div class="col-md-3 col-sm-6 mt-3">
+            <div class="col-md-3 col-sm-6 mt-3 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/artistic.jpg" alt="">
                 </div>
                 <h6 class="mt-2">Outdoor activities</h6>
             </div>
-            <div class="col-md-3 col-sm-6 mt-3">
+            <div class="col-md-3 col-sm-6 mt-3 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/Challenge.jpeg" alt="">
                 </div>
@@ -403,25 +250,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-6 mt-3">
+            <div class="col-md-3 col-sm-6 mt-3 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/outdoors.jpeg" alt="">
                 </div>
                 <h6 class="mt-2">Music</h6>
             </div>
-            <div class="col-md-3 col-sm-6 mt-3">
+            <div class="col-md-3 col-sm-6 mt-3 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/autumn-equinox.jpg" alt="">
                 </div>
                 <h6 class="mt-2">Preforming art</h6>
             </div>
-            <div class="col-md-3 col-sm-6 mt-3">
+            <div class="col-md-3 col-sm-6 mt-3 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/Fun.jpeg" alt="">
                 </div>
                 <h6 class="mt-2">Outdoor activities</h6>
             </div>
-            <div class="col-md-3 col-sm-6 mt-3">
+            <div class="col-md-3 col-sm-6 mt-3 col-xs-6">
                 <div class="img-catagory">
                     <img src="./assets/images/volunteer-hands.jpeg" alt="">
                 </div>
@@ -429,21 +276,22 @@
             </div>
         </div>
     </div>
-
+    <!-- //Catagory -->
+    <!-- Footer -->
     <footer id="site-footer" class="mt-5">
         <div class="container">
             <div id='my_row' class="row footer-list">
                 <div class="col-md-1 col-sm-12">
-                    <a href="" class="text-white">Home</a>
+                    <a href="./index.html" class="text-white">Home</a>
                 </div>
                 <div class="col-md-1 col-sm-12">
                     <a href="" class="text-white">Events</a>
                 </div>
                 <div class="col-md-1 col-sm-12 " style="padding: 0px 0px;">
-                    <a href="" class="text-white">Contact us</a>
+                    <a href="./contact.html" class="text-white">Contact us</a>
                 </div>
                 <div class="col-md-1 col-sm-12">
-                    <a href="" class="text-white">About</a>
+                    <a href="./about.html" class="text-white">About</a>
                 </div>
                 <div class="col-md-1 col-sm-12">
                     <a href="" class="text-white">English</a>
@@ -464,7 +312,14 @@
             <!-- </div> -->
         </div>
     </footer>
+    <!-- Footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/common.js"></script>
     <script src="./assets/js/index.js"></script>
+
 </body>
 
 </html>

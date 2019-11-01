@@ -110,5 +110,9 @@ section .container {
         margin-left: 14%;
         height:350px ;
     }
+    .loginBtn {
+      font-size: 12px;
+      width: 13rem;
+    }   
 }
   

@@ -1,7 +1,20 @@
+.create-event-logo {
+    width: 180px;
+    height: 80px;
+    margin-bottom: 5rem;
+    margin-top: 77px;
+}
+
+.create-event-button {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
 #video-content {
-    /* width: 802px; */
-    margin-left: 14%;
-    height: 85rem;
+    width: 878px;
+    margin-left: 12%;
+    margin-bottom: 154px;
+    height: 125rem;
     background: #FFF;
     box-sizing: border-box;
     border-radius: 8px;
@@ -38,13 +51,13 @@
 }
 
 .form-img {
-    width: 100px;
-    height: 100px;
+    width: 109px;
+    height: 87px;
     position: absolute;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(50%) translateY(50%);
     -webkit-transform: translateX(50%) translateY(50%);
-    transform: translateX(50%) translateY(50%);
+    transform: translateX(60%) translateY(75%);
 }
 
 .main-section .container {
@@ -99,5 +112,88 @@
 }
 
 .md-form label {
+    margin-top: 20px;
     font-weight: bold;
+}
+
+.create-event-date {
+    margin-top: 20px;
+}
+
+.data-text, .time-text {
+    font-weight: bold;
+}
+
+.create-events {
+    margin-left: 160px;
+}
+@media only screen and (max-width: 1024px) {
+    #video-content {
+        margin-left: 4%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .row.main-event-content {
+        margin-right: 42px;
+        margin-left: -121px;
+    }
+    #video-content {
+        height: 140rem;
+        width: 648px;
+        margin-left: 5%;
+        margin-bottom: 90px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .create-event-logo {
+        margin-top: 50px;
+        margin-bottom: 3rem;
+    }
+    .create-event-button {
+        margin-top: 30px;
+    }
+    .create-events {
+        margin-left: 15px;
+    }
+    #video-content {
+        height: 140rem;
+        width: 294px;
+        margin-left: 5%;
+        margin-bottom: 90px;
+    }
+    .row.main-event-content {
+        margin-right: -8px;
+        margin-left: -21px;
+    }
+    .md-form label {
+        margin-top: 10px;
+    }
+    .create-event-date {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #video-content {
+        margin-left: 12%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #video-content {
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #video-content {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #video-content {
+        margin-left: -1%;
+    }
 }
