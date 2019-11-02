@@ -1,4 +1,4 @@
-.profile {
+header .profile {
     width: 45px;
     height: 45px;
 }
@@ -98,9 +98,7 @@
     position: center;
 }
 
-.row-equal.active, .row-equal.next, .row-equal.prev {
-    display: flex;
-}
+
 
 /* .card-add.mt-4 {
     text-align: center;
@@ -112,8 +110,7 @@
 }
 
 /* Joined-posts */
-
-.joined-posts {
+.joined-posts{
     display: none;
 }
 
@@ -124,11 +121,26 @@
 .joined-posts .interested .row-equal {
     height: 450px;
 }
+
 .card-add .joined {
     color: #90298d;
     background: white !important;
     border: 1px solid #90298d;
 }
+
+/* Events-posts */
+.events-posts{
+    display: none;
+}
+
+.events-posts .interested {
+    width: 100%;
+}
+
+.events-posts .interested .row-equal {
+    height: 450px;
+}
+
 /* //cards */
 
 .line {
@@ -182,11 +194,17 @@ button.log-out {
         height: 150px;
         width: 150px;
     }
-    .interested-posts .interested .row-equal {
+    /* .interested-posts .interested .row-equal {
         height: 253vh;
+    } */
+    .interested-posts .interested .row-equal {
+        height: 300vh;
     }
     .joined-posts .interested .row-equal {
-        height: 253vh;
+        height: 300vh;
+    }
+    .events-posts .interested .row-equal {
+        height: 300vh;
     }
     .card-add {
         display: block;

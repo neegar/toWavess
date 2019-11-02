@@ -9,41 +9,43 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/catagory.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/images/logo_new.png" class="119.73" height="49.5px" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-light"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav navbar-right ml-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Sign in </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Login</a>
-                        </li>
+        <div class="navigation">
+            <div class="nav-container">
+                <div class="brand"><a href="./index.html">
+                        <img src="./assets/images/logo_new.png" class="logo 119.73" height="49.5px" alt="logo">
+                    </a></div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <!-- <li style="border-right: 1.5px solid rgb(165, 165, 165);
+                        height: 50px; "><a href="#!">Event</a></li> -->
+                        <li><a href="#!" class="nav-create-event">Create event</a></li>
+                        <li class="line"><svg height="60" width="10">
+                                <line x1="0" y1="0" x2="0" y2="90" style="stroke:gray;stroke-width:2" />
+                                Sorry, your browser does not support inline SVG.
+                            </svg></li>
+                        <li><a href="#!">Sign in</a></li>
+                        <li><a href="#!">Login</a></li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
+    <!-- //Header -->
+
+    <!-- Video -->
     <section>
         <div class="overlay"></div>
         <img src="./assets/images/Water-Bridges-l.jpg" alt="">
@@ -55,32 +57,69 @@
                     <h4><b>the world and start meeting up with the ones near you.</b></h4><br>
                     <!-- <h6><b>We simply want to extend the boundaries of Earth to the horizons of your imaginations!</b>
                     </h6><br> -->
-                    <a class="btn btn-lg pl-5 pr-5 explore-events" href="#" role="button"><small>Explore
-                            events</small></a>
+                    <button class="btn btn-lg pl-5 pr-5 explore-events" role="button"><small>Explore
+                            events</small></button>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container mt-5">
-        <div style="width: 100%; height: 500px !important;">
+    <!-- //Video -->
+
+    <!-- Posts interested-->
+    <div class="container mt-5 interested-posts page-wrapper">
+        <div class="interested">
             <div class="row row-equal ">
-                <div class="col-md-3" id="main-card">
+                <div class="col-md-3 post">
                     <div class="card">
                         <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
+                            <div class="images card-img-top">
                                 <img src="./assets/images/Crazy.jpg" alt="image1" class="d-block w-100">
                             </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
                             </div>
-                            <div class="card-text pl-2">
-                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Placeat ullam deserunt culpa voluptate voluptatum cumque earum, a non
-                                    tenetur
-                                    provident repudiandae possimus, autem sit</p>
-                                <span class="outdoor-activities">outdoor activities</span> <span
-                                    class="text-muted joined-count">0</span> <span id="joined-text"
-                                    class="text-muted">member</span>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
+                            </div>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn join text-white pl-4 pr-4"> <b>Join</b>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 post">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="images card-img-top">
+                                <img src="./assets/images/artistic.jpg" alt="image1" class="d-block w-100">
+                            </div>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
+                            </div>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
                             </div>
                             <div class="card-add mt-4">
                                 <div class="row">
@@ -97,81 +136,93 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 post">
                     <div class="card">
                         <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
+                            <div class="images card-img-top">
+                                <img src="./assets/images/autumn-equinox.jpg" alt="image1" class="d-block w-100">
+                            </div>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
+                            </div>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
+                            </div>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 post">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="images card-img-top">
                                 <img src="./assets/images/Fun.jpeg" alt="image1" class="d-block w-100">
                             </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
                             </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.
-                                Inventore dignissimos amet quia eos nesciunt at, mollitia voluptate consequatur
-                                autem corporis, qui est, voluptates distinct
-                                <p>outdoor activities <span>1255</span> member</p>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
-                                <img src="./assets/images/artistic.jpg" alt="image1" class="d-block w-100">
-                            </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
-                            </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit. Ipsum eos, accusamus alias adipisci sunt rerum hic corrupti, iste soluta
-                                ipsam assumenda earum quam. Amet quam officia earum
-                                <p>outdoor activities <span>1255</span>member</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
-                                <img src="./assets/images/Professional.jpeg" alt="image1" class="d-block w-100">
-                            </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
-                            </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor, sit amet consectetur
-                                adipisicing
-                                elit. Omnis enim reiciendis obcaecati, repellat esse autem architecto. Nisi
-                                possimus veniam veritatis nulla atque error
-                                <p>outdoor activities <span>1255</span>member</p>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div style="width: 100%; height: 500px !important;">
-            <div class="row row-equal">
-                <div class="col-md-3" id="main-card">
+        <div class="interested">
+            <div class="row row-equal ">
+                <div class="col-md-3 post">
                     <div class="card">
                         <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
-                                <img src="./assets/images/Crazy.jpg" alt="image1" class="d-block w-100">
+                            <div class="images card-img-top">
+                                <img src="./assets/images/Fun.jpeg" alt="image1" class="d-block w-100">
                             </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
                             </div>
-                            <div class="card-text pl-2">
-                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Placeat ullam deserunt culpa voluptate voluptatum cumque earum, a non
-                                    tenetur
-                                    provident repudiandae possimus, autem sit</p>
-                                <span class="outdoor-activities">outdoor activities</span> <span
-                                    class="text-muted joined-count">0</span> <span id="joined-text"
-                                    class="text-muted">member</span>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
                             </div>
                             <div class="card-add mt-4">
                                 <div class="row">
@@ -188,81 +239,126 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 post">
                     <div class="card">
                         <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
-                                <img src="./assets/images/Fun.jpeg" alt="image1" class="d-block w-100">
+                            <div class="images card-img-top">
+                                <img src="./assets/images/outdoors.jpeg" alt="image1" class="d-block w-100">
                             </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
                             </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.
-                                Inventore dignissimos amet quia eos nesciunt at, mollitia voluptate consequatur
-                                autem corporis, qui est, voluptates distinct
-                                <p>outdoor activities <span>1255</span> member</p>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
+                            </div>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 post">
                     <div class="card">
                         <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
+                            <div class="images card-img-top">
+                                <img src="./assets/images/Social.jpeg" alt="image1" class="d-block w-100">
+                            </div>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
+                            </div>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
+                            </div>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 post">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="images card-img-top">
                                 <img src="./assets/images/artistic.jpg" alt="image1" class="d-block w-100">
                             </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
                             </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit. Ipsum eos, accusamus alias adipisci sunt rerum hic corrupti, iste soluta
-                                ipsam assumenda earum quam. Amet quam officia earum
-                                <p>outdoor activities <span>1255</span>member</p>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
-                                <img src="./assets/images/Professional.jpeg" alt="image1" class="d-block w-100">
-                            </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
-                            </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor, sit amet consectetur
-                                adipisicing
-                                elit. Omnis enim reiciendis obcaecati, repellat esse autem architecto. Nisi
-                                possimus veniam veritatis nulla atque error
-                                <p>outdoor activities <span>1255</span>member</p>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div style="width: 100%; height: 500px !important;">
-            <div class="row row-equal">
-                <div class="col-md-3" id="main-card">
+        <div class="interested">
+            <div class="row row-equal ">
+                <div class="col-md-3 post">
                     <div class="card">
                         <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
+                            <div class="images card-img-top">
                                 <img src="./assets/images/Crazy.jpg" alt="image1" class="d-block w-100">
                             </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
                             </div>
-                            <div class="card-text pl-2">
-                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Placeat ullam deserunt culpa voluptate voluptatum cumque earum, a non
-                                    tenetur
-                                    provident repudiandae possimus, autem sit</p>
-                                <span class="outdoor-activities">outdoor activities</span> <span
-                                    class="text-muted joined-count">0</span> <span id="joined-text"
-                                    class="text-muted">member</span>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
                             </div>
                             <div class="card-add mt-4">
                                 <div class="row">
@@ -279,56 +375,101 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 post">
                     <div class="card">
                         <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
-                                <img src="./assets/images/Fun.jpeg" alt="image1" class="d-block w-100">
+                            <div class="images card-img-top">
+                                <img src="./assets/images/autumn-equinox.jpg" alt="image1" class="d-block w-100">
                             </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
                             </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.
-                                Inventore dignissimos amet quia eos nesciunt at, mollitia voluptate consequatur
-                                autem corporis, qui est, voluptates distinct
-                                <p>outdoor activities <span>1255</span> member</p>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
+                            </div>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 post">
                     <div class="card">
                         <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
-                                <img src="./assets/images/artistic.jpg" alt="image1" class="d-block w-100">
-                            </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
-                            </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit. Ipsum eos, accusamus alias adipisci sunt rerum hic corrupti, iste soluta
-                                ipsam assumenda earum quam. Amet quam officia earum
-                                <p>outdoor activities <span>1255</span>member</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-block">
-                            <div class="images card-img-top card-img-top-250">
+                            <div class="images card-img-top">
                                 <img src="./assets/images/Professional.jpeg" alt="image1" class="d-block w-100">
                             </div>
-                            <div class="card-title pl-2">
-                                <h6>title1/</h6>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
                             </div>
-                            <div class="card-text pl-2 text-muted">Lorem ipsum dolor, sit amet consectetur
-                                adipisicing
-                                elit. Omnis enim reiciendis obcaecati, repellat esse autem architecto. Nisi
-                                possimus veniam veritatis nulla atque error
-                                <p>outdoor activities <span>1255</span>member</p>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
+                            </div>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 post">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="images card-img-top">
+                                <img src="./assets/images/volunteer-hands.jpeg" alt="image1" class="d-block w-100">
+                            </div>
+                            <div class="card-title pl-2 pt-2">
+                                <h6>Dualingio Baku English Meetup</h6>
+                            </div>
+                            <div class="card-text pl-2 pr-2">
+                                <p class="text-muted">Join us to practice your English with cool people in
+                                    casual
+                                    locations!</p>
+                                <a href="#">Outdoor activities</a>
+                                &nbsp;
+                                <span class="text-muted joined-count pl-3">0</span> <span
+                                    class="joined-text text-muted">member</span>
+                            </div>
+                            <div class="card-add mt-4">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="#"><img src="./assets/images/A_Black_Star.png" class="star-logo"
+                                                alt=""></a>
+                                        <p>1255</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn join text-white pl-4 pr-4"> <b>Join</b> </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -336,6 +477,9 @@
             </div>
         </div>
     </div>
+    <!-- //Posts interested -->
+
+    <!-- Footer -->
     <footer id="site-footer" style="margin-top: 20%;">
         <div class="container">
             <div id='my_row' class="row footer-list">
@@ -370,7 +514,11 @@
             <!-- </div> -->
         </div>
     </footer>
+    <!-- //Footer -->
+
+    <script src="./assets/js/common.js"></script>
     <script src="./assets/js/catagory.js"></script>
+
 </body>
 
 </html>

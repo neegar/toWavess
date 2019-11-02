@@ -1,6 +1,17 @@
-.navbar-nav>li {
-    padding-left: 20px;
-    padding-right: 20px;
+.nav-list {
+    margin-right: -52px;
+}
+
+.nav-list .line {
+    margin-top: 2px;
+}
+
+/* .nav-list {
+    margin-right: -52px;
+} */
+
+.line {
+    margin-top: 2px;
 }
 
 section {
@@ -43,18 +54,18 @@ section .overlay {
     z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
-    section {
-        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-    section video {
-        display: none;
-    }
+.explore-events {
+    cursor: pointer;
 }
 
-#video-content .explore-events {
-    background-color: white;
-    color: #384CBD;
+/* cards */
+
+.interested-posts .interested {
+    width: 100%;
+}
+
+.interested-posts .interested .row-equal {
+    height: 450px;
 }
 
 .images {
@@ -71,29 +82,80 @@ section .overlay {
     width: 100%;
 }
 
-.join {
+.card-add {
+    display: none;
+    text-align: center;
+    pointer-events: none;
+}
+
+.card-add .join {
     background: linear-gradient(to right, #3165b2, #90298d) !important;
 }
 
-.row-equal.active, .row-equal.next, .row-equal.prev {
-    display: flex;
-}
-
-.star-logo {
+.card-add .star-logo {
     width: 20px;
     height: 20px;
     position: center;
 }
 
-.card-add {
-    display: none;
-}
-
-.card-add.mt-4 {
+/* .card-add.mt-4 {
     text-align: center;
     pointer-events: none;
-}
+} */
 
 .card-block .outdoor-activities {
     color: #90298d;
+}
+
+/* Media queries */
+
+@media (pointer: coarse) and (hover: none) {
+    /* section {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    } */
+    section video {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .logo {
+        margin-left: 33px;
+    }
+    .nav-list {
+        margin-right: 18px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #video-content h1 {
+        font-size: 32px;
+    }
+    #video-content h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-list .line {
+        display: none;
+    }
+    input#name {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .nav-list {
+        margin-right: 0px;
+    }
+    .interested-posts .interested .row-equal {
+        height: 309vh;
+    }
+    .card-add {
+        display: block;
+    }
 }

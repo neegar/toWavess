@@ -51,3 +51,15 @@ $(function () {
     $('.timepicker').datetimepicker(optionsTime);
     $('.datetimepicker').datetimepicker(optionsDatetime);
 });
+
+
+// Add active class to the current button (highlight it)
+var main = document.getElementById("all-buttons");
+var buttons = main.getElementsByClassName("myButton");
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}

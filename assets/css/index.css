@@ -311,7 +311,7 @@ section .overlay {
 
 .post-slider {
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .post-slider .slider-title {
@@ -351,7 +351,7 @@ section .overlay {
 }
 
 .post-slider .post-wrapper {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     overflow: hidden;
     width: 87%;
     height: 480px;
@@ -372,7 +372,7 @@ section .overlay {
 .post-slider .post-wrapper .post .post-info {
     height: 250px;
     padding: 0px 5px;
-    border: 1px solid goldenrod;
+    /* border: 1px solid goldenrod; */
 }
 
 .post-slider .post-wrapper .post .post-info a {

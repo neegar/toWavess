@@ -67,7 +67,7 @@
 
 .myButton {
     box-shadow: inset 0px 1px 0px 0px #c9ebff;
-    background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    /* background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%); */
     background-color: #ffffff;
     border-radius: 6px;
     border: 1px solid #3866a3;
@@ -84,15 +84,22 @@
 }
 
 .myButton:hover {
-    background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-    background-color: #ffffff;
+    /* background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color: #ffffff; */
+    background-color: rgb(73, 73, 230);
+    color: white;
 }
 
 .myButton:active {
     position: relative;
     top: 1px;
+    /* background-color: blue; */
 }
+.active{
+    color: white;
+    background-color: rgb(73, 73, 230);
 
+}
 /* 
 .datepicker {
     padding: 4px;

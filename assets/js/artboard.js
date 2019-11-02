@@ -41,15 +41,23 @@ $(document).ready(function () {
         // $(this).closest("div").find(".joined-text").html("member")
     });
 
-    $(".joined-list").click(function(){
+    $(".joined-list").click(function () {
         $(".interested-posts").css("display", "none");
+        $(".events-posts").css("display", "none");
         $(".joined-posts").css("display", "block");
 
-    })
-    $(".interested-posts").click(function(){
-        $("").css("display", "none");
-        $(".joined-posts").css("display", "block");
+    });
 
-    })
+    $(".interested-list").click(function () {
+        $(".joined-posts").css("display", "none");
+        $(".events-posts").css("display", "none");
+        $(".interested-posts").css("display", "block");
+    });
 
+    $(".events-list").click(function () {
+        $(".joined-posts").css("display", "none");
+        $(".interested-posts").css("display", "none");
+        $(".events-posts").css("display", "block");
+    });
+    
 });
