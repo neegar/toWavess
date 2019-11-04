@@ -163,7 +163,7 @@ header .profile {
     border: none;
     z-index: 50;
     position: absolute;
-    top: 10%;
+    top: 100%;
     right: 8%;
 }
 

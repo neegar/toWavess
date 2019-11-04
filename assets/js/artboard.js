@@ -19,9 +19,9 @@ $(document).ready(function () {
     //     $(".card-add").css("display", "none");
     //     $("#joined-text").html("member")
     // });
-    $(".log-out-img").click(function () {
-        $("button.log-out").css("display", "block");
-    });
+    // $(".log-out-img").click(function () {
+    //     $("button.log-out").css("display", "block");
+    // });
 
 
     $(".post").mouseover(function () {

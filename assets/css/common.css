@@ -231,7 +231,7 @@ nav ul li ul li a {
 #site-footer {
     background-color: #303030;
     padding: 6em 0;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 
 /* .footer-social .list-inline {
