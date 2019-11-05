@@ -388,7 +388,7 @@ section .overlay {
 }
 
 .card-add {
-    display: none;
+    /* display: none; */
     text-align: center;
     pointer-events: none;
 }

@@ -27,7 +27,7 @@ $(document).ready(function () {
   $('.post-wrapper').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
@@ -65,7 +65,7 @@ $(document).ready(function () {
   $(".post").mouseover(function () {
     // $(".card-add").css("display", "block");
     // $("#joined-text").html("Joined")
-    $(this).closest("div").find('.card-add').css("display", "block")
+    $(this).closest("div").find('.card-add').css("display", "table")
     $(this).closest("div").find('.joined-text').html("joined")
     // $(this).closest("div").find(".joined-text").html("member")
   });
@@ -77,5 +77,8 @@ $(document).ready(function () {
     $(this).closest("div").find('.card-add').css("display", "none")
     $(this).closest("div").find('.joined-text').html("member")
     // $(this).closest("div").find(".joined-text").html("member")
+  });
+  $('.join').click(function(){
+    console.log("asdfg")
   });
 });
