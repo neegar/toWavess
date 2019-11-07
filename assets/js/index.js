@@ -66,19 +66,25 @@ $(document).ready(function () {
     // $(".card-add").css("display", "block");
     // $("#joined-text").html("Joined")
     $(this).closest("div").find('.card-add').css("display", "table")
+
+    $(this).closest("div").find('.card-add').css("transition", "display, 1s")
+
+
     $(this).closest("div").find('.joined-text').html("joined")
-    // $(this).closest("div").find(".joined-text").html("member")
+    $(this).closest("div").find(".joined-text").html("member")
   });
 });
 $(document).ready(function () {
+  var count= 0;
   $(".post").mouseleave(function () {
     // $(".card-add").css("display", "block");
     // $("#joined-text").html("Joined")
     $(this).closest("div").find('.card-add').css("display", "none")
     $(this).closest("div").find('.joined-text').html("member")
-    // $(this).closest("div").find(".joined-text").html("member")
+    $(this).closest("div").find(".joined-text").html("member")
   });
   $('.join').click(function(){
-    console.log("asdfg")
-  });
+    count++;
+    $('.joint-count').html(count)
+  })
 });

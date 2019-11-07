@@ -249,6 +249,7 @@ section .overlay {
 
 #video-content .explore-events {
     background-color: red;
+    cursor: pointer;
 }
 
 /* .img-catagory {
@@ -312,6 +313,7 @@ section .overlay {
 .post-slider {
     position: relative;
     /* border: 1px solid red; */
+    /* outline: none; */
 }
 
 .post-slider .slider-title {
@@ -360,6 +362,7 @@ section .overlay {
 }
 
 .post-slider .post-wrapper .post {
+    outline: none;
     width: 300px;
     height: 450px;
     margin: 0 10px;
@@ -388,12 +391,13 @@ section .overlay {
 }
 
 .card-add {
-    /* display: none; */
+    display: none;
     text-align: center;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .card-add .join {
+    cursor: pointer;
     background: linear-gradient(to right, #3165b2, #90298d) !important;
 }
 

@@ -14,8 +14,8 @@ $('#nav-toggle').on('click', function () {
 $("#nav-toggle").click(function () {
     $("nav ul").toggle();
 });
-var count = 0;
-$(".join").click(function () {
-    count++;
-    $(".joined-count").text(count);
-});
+// var count = 0;
+// $(".join").click(function () {
+//     count++;
+//     $(".joined-count").text(count);
+// });

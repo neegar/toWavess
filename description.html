@@ -18,7 +18,7 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="description-header">
         <div class="navigation">
             <div class="nav-container">
                 <div class="brand"><a href="./index.html">
@@ -52,12 +52,12 @@
     <!-- //Header -->
 
 
-    <div class="container mt-5">
+    <div style="margin-top:70px;" class="container ">
         <div class="row">
             <div class="col-md-5 col-sm-12">
-                <div class="card" style="width:451px;">
-                    <div style="width: 450px; height: 450px;">
-                        <img src="./assets/images/autumn-equinox.jpg" class="card-img-top" width="100%" height="100%"
+                <div class="card">
+                    <div>
+                        <img src="./assets/images/autumn-equinox.jpg" width="100%" height="100%"
                             alt="..."></div>
                     <div class="card-body">
                         <div class="row pt-3">
@@ -96,8 +96,7 @@
                                     class="text-xs-center" width="30px" height="10px" alt=""></li>
                             <li class="list-inline-item"><img src="./assets/images/Group 76@2xx.png"
                                     class="text-xs-center" width="30px" height="10px" alt=""></li>
-                            <!-- <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank"
-                                        href="#">T</a></li> -->
+                         
                         </ul>
 
                     </div>
@@ -153,7 +152,6 @@
 
 
     <!-- <div style="background-color: rgb(238, 238, 238);"> -->
-
     <!------ Include the above in your HEAD tag ---------->
 
     <div class="container">
@@ -172,78 +170,90 @@
                                             src="https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg"
                                             alt="profile">
                                     </a>
-                                    <div class="media-body">
-                                        <div class="well well-lg">
-                                            <h4 class="media-heading text-uppercase reviews">Marco </h4>
-                                            <div class="media-date text-uppercase reviews list-inline">
-                                                <time>10.02.2003</time>
+                                    <div style="width: 100%;" class="row">
+                                        <div class="col-12">
+                                            <div class="media-body">
+                                                <div class="well well-lg">
+                                                    <h4 class="media-heading text-uppercase reviews">Marco </h4>
+                                                    <div class="media-date text-uppercase reviews list-inline">
+                                                        <time>10.02.2003</time>
+                                                    </div>
+                                                    <p class="media-comment">
+                                                        Great snippet! Thanks for sharing.
+                                                    </p>
+                                                    <a class="btn btn-info btn-circle text-uppercase" href="#"
+                                                        id="reply"><span class="glyphicon glyphicon-share-alt"><i
+                                                                class="fas fa-reply"></i></span> Reply</a>
+                                                    <a class="btn btn-warning btn-circle text-uppercase text-white"
+                                                        data-toggle="collapse" role="button" aria-expanded="false"
+                                                        aria-controls="replyOne" href="#replyOne"><span
+                                                            class="glyphicon glyphicon-comment"> <i
+                                                                class="fas fa-comment-alt"></i> </span> 2
+                                                        comments</a>
+                                                </div>
                                             </div>
-                                            <p class="media-comment">
-                                                Great snippet! Thanks for sharing.
-                                            </p>
-                                            <a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"><span
-                                                    class="glyphicon glyphicon-share-alt"><i
-                                                        class="fas fa-reply"></i></span> Reply</a>
-                                            <a class="btn btn-warning btn-circle text-uppercase text-white"
-                                                data-toggle="collapse" role="button" aria-expanded="false"
-                                                aria-controls="replyOne" href="#replyOne"><span
-                                                    class="glyphicon glyphicon-comment"> <i
-                                                        class="fas fa-comment-alt"></i> </span> 2
-                                                comments</a>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="collapse" id="replyOne">
+                                                <ul class="media-list">
+                                                    <li class="media media-replied">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="media-object rounded-circle"
+                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/ManikRathee/128.jpg"
+                                                                alt="profile">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <div class="well well-lg">
+                                                                <h4 class="media-heading text-uppercase reviews"><span
+                                                                        class="glyphicon glyphicon-share-alt"><i
+                                                                            class="fas fa-reply"></i></span> The
+                                                                    Hipster</h4>
+                                                                <div
+                                                                    class="media-date text-uppercase reviews list-inline">
+                                                                    <time>10.02.2003</time>
+                                                                </div>
+                                                                <p class="media-comment">
+                                                                    Nice job Maria.
+                                                                </p>
+                                                                <a class="btn btn-info btn-circle text-uppercase"
+                                                                    href="#" id="reply"><span
+                                                                        class="glyphicon glyphicon-share-alt"><i
+                                                                            class="fas fa-reply"></i></span> Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="media media-replied" id="replied">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="media-object rounded-circle"
+                                                                src="https://pbs.twimg.com/profile_images/442656111636668417/Q_9oP8iZ.jpeg"
+                                                                alt="profile">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <div class="well well-lg">
+                                                                <h4 class="media-heading text-uppercase reviews"><span
+                                                                        class="glyphicon glyphicon-share-alt"><i
+                                                                            class="fas fa-reply"></i></span> Mary</h4>
+                                                                </h4>
+                                                                <div
+                                                                    class="media-date text-uppercase reviews list-inline">
+                                                                    <time>10.02.2003</time>
+                                                                </div>
+                                                                <p class="media-comment">
+                                                                    Thank you Guys!
+                                                                </p>
+                                                                <a class="btn btn-info btn-circle text-uppercase"
+                                                                    href="#" id="reply"><span
+                                                                        class="glyphicon glyphicon-share-alt"><i
+                                                                            class="fas fa-reply"></i></span> Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="collapse" id="replyOne">
-                                        <ul class="media-list">
-                                            <li class="media media-replied">
-                                                <a class="pull-left" href="#">
-                                                    <img class="media-object rounded-circle"
-                                                        src="https://s3.amazonaws.com/uifaces/faces/twitter/ManikRathee/128.jpg"
-                                                        alt="profile">
-                                                </a>
-                                                <div class="media-body">
-                                                    <div class="well well-lg">
-                                                        <h4 class="media-heading text-uppercase reviews"><span
-                                                                class="glyphicon glyphicon-share-alt"><i
-                                                                    class="fas fa-reply"></i></span> The
-                                                            Hipster</h4>
-                                                        <div class="media-date text-uppercase reviews list-inline">
-                                                            <time>10.02.2003</time>
-                                                        </div>
-                                                        <p class="media-comment">
-                                                            Nice job Maria.
-                                                        </p>
-                                                        <a class="btn btn-info btn-circle text-uppercase" href="#"
-                                                            id="reply"><span class="glyphicon glyphicon-share-alt"><i
-                                                                    class="fas fa-reply"></i></span> Reply</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="media media-replied" id="replied">
-                                                <a class="pull-left" href="#">
-                                                    <img class="media-object rounded-circle"
-                                                        src="https://pbs.twimg.com/profile_images/442656111636668417/Q_9oP8iZ.jpeg"
-                                                        alt="profile">
-                                                </a>
-                                                <div class="media-body">
-                                                    <div class="well well-lg">
-                                                        <h4 class="media-heading text-uppercase reviews"><span
-                                                                class="glyphicon glyphicon-share-alt"><i
-                                                                    class="fas fa-reply"></i></span> Mary</h4>
-                                                        </h4>
-                                                        <div class="media-date text-uppercase reviews list-inline">
-                                                            <time>10.02.2003</time>
-                                                        </div>
-                                                        <p class="media-comment">
-                                                            Thank you Guys!
-                                                        </p>
-                                                        <a class="btn btn-info btn-circle text-uppercase" href="#"
-                                                            id="reply"><span class="glyphicon glyphicon-share-alt"><i
-                                                                    class="fas fa-reply"></i></span> Reply</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+
+
                                 </li>
                                 <li class="media">
                                     <a class="pull-left" href="#">
@@ -251,22 +261,25 @@
                                             src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg"
                                             alt="profile">
                                     </a>
-                                    <div class="media-body">
-                                        <div class="well well-lg">
-                                            <h4 class="media-heading text-uppercase reviews">Nico</h4>
-                                            <div class="media-date text-uppercase reviews list-inline">
-                                                <time>10.02.2003</time>
+                                    <div class="col-12">
+                                        <div class="media-body">
+                                            <div class="well well-lg">
+                                                <h4 class="media-heading text-uppercase reviews">Nico</h4>
+                                                <div class="media-date text-uppercase reviews list-inline">
+                                                    <time>10.02.2003</time>
+                                                </div>
+                                                <p class="media-comment">
+                                                    I'm looking for that. Thanks!
+                                                </p>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe class="embed-responsive-item"
+                                                        src="//www.youtube.com/embed/80lNjkcp6gI"
+                                                        allowfullscreen></iframe>
+                                                </div>
+                                                <a class="btn btn-info btn-circle text-uppercase" href="#"
+                                                    id="reply"><span class="glyphicon glyphicon-share-alt"><i
+                                                            class="fas fa-reply"></i></span> Reply</a>
                                             </div>
-                                            <p class="media-comment">
-                                                I'm looking for that. Thanks!
-                                            </p>
-                                            <div class="embed-responsive embed-responsive-16by9">
-                                                <iframe class="embed-responsive-item"
-                                                    src="//www.youtube.com/embed/80lNjkcp6gI" allowfullscreen></iframe>
-                                            </div>
-                                            <a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"><span
-                                                    class="glyphicon glyphicon-share-alt"><i
-                                                        class="fas fa-reply"></i></span> Reply</a>
                                         </div>
                                     </div>
                                 </li>
@@ -276,51 +289,60 @@
                                             src="https://s3.amazonaws.com/uifaces/faces/twitter/lady_katherine/128.jpg"
                                             alt="profile">
                                     </a>
-                                    <div class="media-body">
-                                        <div class="well well-lg">
-                                            <h4 class="media-heading text-uppercase reviews">Kriztine</h4>
-                                            <div class="media-date text-uppercase reviews list-inline">
-                                                <time>10.02.2003</time>
-                                            </div>
-                                            <p class="media-comment">
-                                                Yehhhh... Thanks for sharing.
-                                            </p>
-                                            <a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"><span
-                                                    class="glyphicon glyphicon-share-alt"><i
-                                                        class="fas fa-reply"></i></span> Reply</a>
-                                            <a class="btn btn-warning btn-circle text-uppercase text-white"
-                                                data-toggle="collapse" href="#replyTwo"><span
-                                                    class="glyphicon glyphicon-comment"><i
-                                                        class="fas fa-comment-alt"></i></span> 1
-                                                comment</a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="replyTwo">
-                                        <ul class="media-list">
-                                            <li class="media media-replied">
-                                                <a class="pull-left" href="#">
-                                                    <img class="media-object rounded-circle"
-                                                        src="https://s3.amazonaws.com/uifaces/faces/twitter/jackiesaik/128.jpg"
-                                                        alt="profile">
-                                                </a>
-                                                <div class="media-body">
-                                                    <div class="well well-lg">
-                                                        <h4 class="media-heading text-uppercase reviews"><span
-                                                                class="glyphicon glyphicon-share-alt"><i
-                                                                    class="fas fa-reply"></i></span> Lizz</h4>
-                                                        <div class="media-date text-uppercase reviews list-inline">
-                                                            <time>10.02.2003</time>
-                                                        </div>
-                                                        <p class="media-comment">
-                                                            Classy!
-                                                        </p>
-                                                        <a class="btn btn-info btn-circle text-uppercase" href="#"
-                                                            id="reply"><span class="glyphicon glyphicon-share-alt"><i
-                                                                    class="fas fa-reply"></i></span> Reply</a>
+                                    <div style="width: 100%;" class="row">
+
+                                        <div class="col-12">
+                                            <div class="media-body">
+                                                <div class="well well-lg">
+                                                    <h4 class="media-heading text-uppercase reviews">Kriztine</h4>
+                                                    <div class="media-date text-uppercase reviews list-inline">
+                                                        <time>10.02.2003</time>
                                                     </div>
+                                                    <p class="media-comment">
+                                                        Yehhhh... Thanks for sharing.
+                                                    </p>
+                                                    <a class="btn btn-info btn-circle text-uppercase" href="#"
+                                                        id="reply"><span class="glyphicon glyphicon-share-alt"><i
+                                                                class="fas fa-reply"></i></span> Reply</a>
+                                                    <a class="btn btn-warning btn-circle text-uppercase text-white"
+                                                        data-toggle="collapse" href="#replyTwo"><span
+                                                            class="glyphicon glyphicon-comment"><i
+                                                                class="fas fa-comment-alt"></i></span> 1
+                                                        comment</a>
                                                 </div>
-                                            </li>
-                                        </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="collapse" id="replyTwo">
+                                                <ul class="media-list">
+                                                    <li class="media media-replied">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="media-object rounded-circle"
+                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/jackiesaik/128.jpg"
+                                                                alt="profile">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <div class="well well-lg">
+                                                                <h4 class="media-heading text-uppercase reviews"><span
+                                                                        class="glyphicon glyphicon-share-alt"><i
+                                                                            class="fas fa-reply"></i></span> Lizz</h4>
+                                                                <div
+                                                                    class="media-date text-uppercase reviews list-inline">
+                                                                    <time>10.02.2003</time>
+                                                                </div>
+                                                                <p class="media-comment">
+                                                                    Classy!
+                                                                </p>
+                                                                <a class="btn btn-info btn-circle text-uppercase"
+                                                                    href="#" id="reply"><span
+                                                                        class="glyphicon glyphicon-share-alt"><i
+                                                                            class="fas fa-reply"></i></span> Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
 

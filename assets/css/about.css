@@ -17,12 +17,17 @@
     .line {
         display: none;
     }
+    .our-mission{
+        flex-direction: column-reverse;
+    }
 }
 
 .nav-list {
     margin-right: -52px;
 }
-
+.about-container{
+    margin-left: 15%;
+}
 .about-img {
     position: relative;
     background-color: black;
