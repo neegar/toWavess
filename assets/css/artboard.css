@@ -89,7 +89,7 @@ header .profile {
 .card-add {
     display: none;
     text-align: center;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .card-add .join {
