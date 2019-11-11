@@ -1,9 +1,6 @@
-$(document).ready(function () {
-    // $("#main-card").mouseleave(function () {
-    //     $(".card-add").css("display", "none");
-    //     $("#joined-text").html("member")
-    // });
-    $(".log-out-img").click(function () {
-        $("button.log-out").css("display", "block");
-    });
-});
+if(window.innerWidth < 800){
+    document.querySelector('.afterImg').style.display = 'block';
+    document.querySelector('.profile').style.display = 'none';
+    document.querySelector('.collapseMe').style.display = 'none';
+    document.querySelector('.afterBtn').style.display = 'block'
+}
